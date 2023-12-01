@@ -1,0 +1,61 @@
+ALGORITMA FRAME WELCOME :
+	1. Saat tampil halaman welcome terdapat tombol masuk, jika ditekan maka akan beralih ke laman frame login.
+
+ALGORITMA FRAME LOGIN :
+	1. Jika Username dan Password kosong tidak diisi maka akan muncul notifikasi username & password tidak boleh kosong.
+	2. Jika Username terisi tetapi password kosong maka akan muncul notifikasi password tidak boleh kosong.
+	3. Jika Username kosong tetapi password terisi maka akan muncul notifikasi username tidak boleh kosong.
+	4. Jika user salah memasukkan password sebanyak 5 kali maka akan muncul notifikasi jika lupa password gunakan fitur lupa password.
+	5. Jika user benar memasukkan data login tetapi tidak mencentang checkbox maka akan muncul harap centang checkbox.
+	6. Jika user benar memasukkan data login dan sesuai maka akan muncul notifikasi berhasil login dan akan beralih ke dashboard sesuai dengan data akses.
+	7. Jika user menekan tombol "kembali kelaman sebelumnya" maka akan kembali kelaman frame welcome.
+	8. Jika user menekan "lupa password? klik disini" maka akan beralih ke laman frame lupa password.
+
+ALGORITMA LUPA PASSWORD & GANTI PASSWORD :
+	1. Tampil halaman frame lupa password, maka diharuskan masukkan username, jika username yang dimasukkan salah maka akan muncul username salah.
+	2. Jika username benar maka akan beralih ke laman frame ganti password.
+	3. Jika form masih kosong maka akan muncul notifikasi anda belum mengisi password baru.
+	4. Jika confirm password tidak sama dengan password baru maka akan muncul notifikasi confirm password salah.
+	5. Jika tahap sesuai maka akan muncul notifikasi password berhasil dirubah dan akan kembali kelaman login.
+
+ALGORITMA FITUR TRANSAKSI
+	1. {tampil awal page transaksi}
+	2. (tombol berwarna biru) jika tombol berwarna biru yang bertuliskan "lanjutkan transaksi" ditekan tanpa memilih/klik data pelanggan pada table maka akan muncul notifikasi `pilih data pada table dahulu!`
+	3. (tombol berwarna biru) jika sebelum tombol ditekan user memilih/klik data pada tabel maka akan berlanjut ke frame transaksi tahap pertama
+	4. (search field) jika user langsung menekan pencarian tanpa menuliskan nama data maka akan muncul notifikasi `anda belum mencari pelanggan, ketikkan nama pelanggan pada kolom pencarian ini`
+	5. (search field) jika user mencari nama pelanggan yang belum terdaftar maka akan muncul notifikasi `pelanggan tidak ditemukan, daftarkan pelanggan baru? tekan ok untuk mendaftarkan pelanggan baru` dan akan otomatis dialihkan ke penambahan pelanggan
+	6. (search field) jika user mencari nama pelanggan yang sudah terdaftar maka akan muncul data pelanggan pada tabel
+	7. {tampilan page 2 transaksi} 
+	8. (icon more) ketika ditekan icon disamping id pelanggan dan id kasir maka akan tampil profile data pelangan dan kasir
+	9. (tombol lanjutkan) ketika ditekan maka akan beralih ke frame transaksi ke 3
+	10. {tampilan page 3 transaksi}
+	11. (tombol lanjutkan) ketika ditekan dan user belum memasukkan pesanan dari laundry pelanggan maka akan muncul `anda belum memasukkan paket yang dipesan pelangan`
+	12. (tombol simpan dikeranjang) jika ditekan tanpa memilih paket pada tabel maka akan muncul notifikasi `field pemesanan kosong`
+	13. (tombol simpan dikeranjang) ketika user sudah memilih paket dan menekan tombol maka paket akan tersimpan di keranjang dan beralih ke page selanjutnya
+
+ALGORITMA FITUR PENGAMBILAN BARANG
+	{tampilan awal}
+	1. (search field) jika user mencari pelanggan yang tidak ada data didalamnya maka akan muncul notifikasi `pelanggan tidak ada atau belum melakukan transaksi, pergi ke fitur transaksi?`, jika menekan tombol ok maka akan beralih ke fitur transaksi
+	2. (search field) jika user langsung menekan tombol cari tanpa memasukkan data pada kolom pencarian yang ingin dicari maka akan muncul notif `Anda belum mencari data transaksi!, ketikkan data yang ingin anda cari di kolom pencarian ini!`
+	3. (search field) jika user mencari data nama pelanggan atau kode order dan mengetikkan pada field dan data ada maka akan muncul pada tabel
+	4. (tombol lakukan pengembalian) jika user langsung menekan tombol tanpa memilih data pada tabel dulu maka akan muncul notif
+	5. (tombol lakukan pengembalian) jika user sebelum menekan tombol memilih data pada tabel dahulu maka akan berlanjut ke tahap kedua
+	{tampilan kedua}
+	1. (tombol lanjutkan) jika user langsung menekan tombol tanpa merubah dulu status ambil pada pelanggan maka status pelanggan yang sebelumnya belum diambil akan otomatis sudah diambil
+	2. (tombol lanjutkan) jika status ambil sudah diambil dan user menekan tombol lanjutkan maka akana otomatis berpindah ke page selanjutnya
+	{tampilan ketiga}
+	1. (field pembayaran) jika pelanggan memiliki status sudah lunas maka field pembayaran akan terkunci dan akan muncul notifikasi
+	2. (field pembayaran) jika pelanggan status belum lunas maka field pembayaran akan terbuka dan user harus memasukkan pembayaran pelanggan yang kurang dan muncul notif
+	3. (detail pemesanan) saat pelanggan menekan maka akan muncul detail pemesanan dan pelanggan dapat merubah keterangan barang
+	4. (detail pemesanan) tombol simpan, jika user langsung menekan maka akan muncul notif
+	5. (detail pemesanan) jika kolom paket dipilih kosong maka akan muncul notif
+	6. (detail pemesanan) jika kolm text keterangan kosong maka akan muncul notif
+	7. (detail pemesanan) jika semua terisi maka data kana teredit
+	8. (tombol simpan transaksi) jika status pelanggan belum lunas maka field pembayaran akan terbuka dan jikauser menekan tombol tapi pembayaran belum di isi maka akan muncul notifikasi
+	9. (tombol simpan transaksi) jika semua prosedur terpenuhi maka transaksi berhasil disimpan
+
+ALGORITMA FITUR DATA PELANGGAN
+	1. (tombol lakukan aksi) jika client memilih aksi tambah pelanggan maka akan muncul frame menambahkan pelanggan
+	2. (tombol lakukan aksi) jika client memilih aksi edit data pelanggan maka akan muncul frame edit
+	3. (tombol lakukan aksi) jika client memilih aksi hapus maka data akan terhapus
+	4. (search field) {LOGIKA SAMA DENGAN ALUR PADA FITUR TRANSAKSI}
